@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS week 2 practice task</title>
+</head>
+<body>
+    <h1>JS week 1 blog task</h1>
+    <h3>Q1. Give a write-up on the Difference between copy by value and copy by reference. </h3>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Copy by value</th>
+            <th scope="col">Copy by reference</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Whenever an element is assigned to another the value of the element is copied to another. for example <br> let a =10;<br>let b=a //10 is copied to b</td>
+            <td>Whenever an element is assigned to another the address of assigning element is copied to another. for example <br> let a =[1,2,3,4];<br>let b=a //address of a is copied to b</td>
+          </tr>
+          <tr>
+           <td>Any changes in the element to which the assignment was done is not reflected in to the element from which the data was assigned. for example <br> let a =10;<br>let b=a //10 is copied to b <br>b=5br
+        console.log(a,b) //a=10 , b=5  </td>  
+        <td>
+            since the actual address is passed any changes in the element to which value was assigned is reflected in the varible from which it was assigned. for example <br> let a =[1,2,3,4];<br>let b=a //address of a is copied to b <br>b[1]=6
+            console.log(a,b)//[1,6,3,4] [1,6,3,4] 
+        </td>
+          </tr>
+          <tr>
+            <td>Use to assign simple data types like int float char   </td>  
+         <td>
+             Used to assign derived data types like array, object, json 
+         </td>
+           </tr>
+          
+        </tbody>
+      </table>
+    <h3>Q2. How to copy by value a composite datatype (array+objects).</h3>
+    <p>One could make use of a for in operator so to copy individual key value pairs or also can you use map function.</p>
+
+    <h1>Check the console for Q3</h1>
+    <script src="index.js"></script>
+</body>
+</html>
